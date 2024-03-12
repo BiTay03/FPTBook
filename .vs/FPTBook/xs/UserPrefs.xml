@@ -1,0 +1,72 @@
+﻿<Properties StartupConfiguration="{8B89203B-16E7-48B0-99D1-27A2829B0307}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FPTBook PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FPTBook/Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="FPTBook/appsettings.json" />
+      <File FileName="FPTBook/Controllers/CategoryController.cs" />
+      <File FileName="FPTBook/Controllers/HomeController.cs" Line="160" Column="1" />
+      <File FileName="FPTBook/Models/Order.cs" />
+      <File FileName="FPTBook/Data/ApplicationDbContext.cs" />
+      <File FileName="FPTBook/Controllers/OrderItemController.cs" />
+      <File FileName="FPTBook/Configurations/BookConfiguration.cs" />
+      <File FileName="FPTBook/Models/Book.cs" Line="9" Column="3" />
+      <File FileName="FPTBook/Configurations/CartConfiguration.cs" />
+      <File FileName="FPTBook/Models/Cart.cs" />
+      <File FileName="FPTBook/Models/CartModel.cs" />
+      <File FileName="FPTBook/Models/Category.cs" Line="17" Column="1" />
+      <File FileName="FPTBook/Configurations/CategoryConfiguration.cs" />
+      <File FileName="FPTBook/Configurations/OrderItemConfiguration.cs" />
+      <File FileName="FPTBook/Configurations/OrderConfiguration.cs" />
+      <File FileName="FPTBook/Models/OrderItem.cs" Line="10" Column="9" />
+      <File FileName="FPTBook/Controllers/OrderController.cs" />
+      <File FileName="FPTBook/Migrations/20240305190455_InitialCreate.cs" />
+      <File FileName="FPTBook/Models/ErrorViewModel.cs" />
+      <File FileName="FPTBook/Program.cs" />
+      <File FileName="FPTBook/Migrations/ApplicationDbContextModelSnapshot.cs" />
+      <File FileName="FPTBook/Views/Home/Index.cshtml" Line="22" Column="33" />
+      <File FileName="FPTBook/Views/Book/Create.cshtml" Line="1" Column="1" />
+      <File FileName="FPTBook/Views/Book/Details.cshtml" Line="1" Column="1" />
+      <File FileName="FPTBook/Views/Book/Delete.cshtml" />
+      <File FileName="FPTBook/Views/Book/Index.cshtml" Line="1" Column="1" />
+      <File FileName="FPTBook/Views/Shared/_Layout.cshtml" Line="97" Column="73" />
+      <File FileName="FPTBook/wwwroot/css/style.css" />
+      <File FileName="FPTBook/Views/Book/_ViewStart.cshtml" />
+      <File FileName="FPTBook/Views/Book/Edit.cshtml" Line="1" Column="1" />
+      <File FileName="FPTBook/wwwroot/scss/bootstrap/scss/_navbar.scss" />
+      <File FileName="FPTBook/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css" />
+      <File FileName="FPTBook/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css" />
+      <File FileName="FPTBook/Controllers/BookController.cs" Line="28" Column="31" />
+      <File FileName="FPTBook/Views/Home/OrderShow.cshtml" />
+      <File FileName="FPTBook/Views/Home/OrderDetail.cshtml" />
+      <File FileName="FPTBook/Views/Home/Details.cshtml" />
+      <File FileName="FPTBook/Views/Home/CartShow.cshtml" Line="35" Column="33" />
+      <File FileName="FPTBook/Views/OrderItem/Create.cshtml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="FPTBook" expanded="True">
+            <Node name="FPTBook" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/danghongquangminh/Downloads/ASP_GCH1107_Đặng Hồng Quang Minh(GCH211240)/FPTBook/Configurations/BookConfiguration.cs" relfile="FPTBook/Configurations/BookConfiguration.cs" line="1" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

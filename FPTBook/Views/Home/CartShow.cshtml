@@ -1,0 +1,66 @@
+@model FPTBook.Models.Book
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<!-- Cart Page Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Products</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var cartItem in ViewBag.carts)
+                     {
+                        <tr>
+                            <th scope="row">
+                                
+                                    <img src="@Url.Content(cartItem.Book.Image)"
+                                         class="img-fluid rounded-3" alt="Cotton T-shirt">
+                                
+                            </th>
+                            <td>
+                                <p class="mb-0 mt-4">@cartItem.Book.Title</p>
+                            </td>
+                            <td>
+                                <p class="mb-0 mt-4">@cartItem.Book.Price</p>
+                            </td>
+                            <td>
+                                <div class="input-group quantity mt-4" style="width: 100px;">
+                                    <form asp-action="UpdateCart" method="post">
+                                        @*update các trường trong input*@
+                                        <input type="hidden" name="Id" value="@cartItem.Book.Id" />
+                                        <input id="form1" min="0" name="Quantity" value="@cartItem.Quantity" type="number"
+                                               class="form-control form-control-sm mb-2" />
+                                        <button type="submit" class="btn btn-danger">Update</button>
+                                    </form>
+                                </div>
+                            </td>
+                            <td>
+                                <p class="mb-0 mt-4">@(cartItem.Quantity * @cartItem.Book.Price) </p>
+                            </td>
+                            <td>
+                                <a asp-action="RemoveCart" asp-route-id="@cartItem.Book.Id" class="btn btn-md rounded-circle bg-light border mt-4">
+                                    <i class="fa fa-times text-danger"></i>
+                                </a>
+                            </td>
+
+                        </tr>
+                     }
+                 </tbody>
+                <a asp-controller="Home" asp-action="BookOrder"> Checkout</a>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- Cart Page End -->

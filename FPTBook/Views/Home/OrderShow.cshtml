@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<FPTBook.Models.Book>
+
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">OrderId</th>
+                        <th scope="col">Orderdate</th>
+                        <th scope="col">TotalPrice</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var order in ViewBag.OrdersWithProducts)
+                    {
+                        <tr>
+                            <th scope="row">@order.Id</th>
+                            <td>@order.OrderDate</td>
+                            <td>@order.Price </td>
+                            <td>
+                                <a asp-action="OrderDetail" asp-route-id="@order.Id" class="btn btn-danger">
+                                    See Detail
+                                </a>
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
